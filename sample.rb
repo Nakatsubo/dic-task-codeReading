@@ -16,5 +16,5 @@ module Clockwork
   handler do |job|
     client.notify("Hello There!")
   end
-  every(30.seconds, 'frequent.job')
+  every(3.minutes, 'frequent.job')
 end
